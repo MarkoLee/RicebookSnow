@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/item_drawerlayout_icon_background_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:background="#66000000" />
+
+    <RelativeLayout
+        android:id="@+id/item_drawerlayout_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip" >
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/item_drawerlayout_icon_imagebutton"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/icon"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_drawerlayout_name_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="40dip"
+        android:text="MarkoLee"
+        android:layout_toRightOf="@id/item_drawerlayout_icon_imagebutton"
+        android:background="@drawable/spinner_default_holo_dark"
+        android:gravity="center_horizontal|left"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_drawerlayout_icon_imagebutton"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:paddingBottom="16dip"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:id="@+id/item_drawerlayout_rect_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:background="#7fffffff" >
+
+            <ImageView
+                android:id="@+id/item_drawerlayout_rect_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dip"
+                android:layout_marginTop="16dip"
+                android:src="@drawable/holo_light_icon_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_below="@id/item_drawerlayout_rect_image1"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="16dip"
+                android:text="查找餐馆"
+                android:textColor="#99333333" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dip"
+                android:layout_alignParentBottom="true"
+                android:background="#b2d9593d" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_drawerlayout_rect_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:background="#7fffffff" >
+
+            <ImageView
+                android:id="@+id/item_drawerlayout_rect_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dip"
+                android:layout_marginTop="16dip"
+                android:src="@drawable/holo_light_icon_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_drawerlayout_rect_image2"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="16dip"
+                android:text="撰写内容"
+                android:textColor="#99333333" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dip"
+                android:layout_alignParentBottom="true"
+                android:background="#b2ffbe21" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
